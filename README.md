@@ -26,6 +26,7 @@ Gitee地址：https://gitee.com/varmixer/hiumsentences
    ```
    git clone https://github.com/pcrbot/hiumsentences.git
    ```
+3. 编辑`__bot__.py`, 在MODULES_ON中按照格式添加`hiumsentences`
 3. 在HoshinoBot的静态资源库下, 新建目录来存放网抑云表情包, 正确的目录结构:
    ```
    res

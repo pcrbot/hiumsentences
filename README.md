@@ -1,5 +1,7 @@
 # hiumsentences
-适用于[HoshinoBot V2](https://github.com/Ice-Cirno/HoshinoBot)的网抑云插件, 会附带随机发图(需额外网抑云表情包). 您可以自行添加表情包, 也可以只发送纯文字. 
+适用于[HoshinoBot V2](https://github.com/Ice-Cirno/HoshinoBot)的网抑云插件, 会附带随机发图(需额外网抑云表情包). 您可以自行添加表情包（可参考下方自用静态资源库）, 也可以只发送纯文字. 
+
+**修改服务名称为中文时请注意，由于使用了关键字触发，如果您设定的服务名包含这些关键字则无法启用或禁用服务，原因是由于指令优先级决定，可参考[非官方文档](https://github.com/pcrbot/hoshinobot-development-documentation/blob/master/trigger.md) (自卖自夸.jpg)**
 
 本项目GitHub地址：https://github.com/pcrbot/hiumsentences
 

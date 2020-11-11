@@ -1,10 +1,10 @@
 import requests,random,os,json
-from hoshino import Service,R
+from hoshino import Service, R
 from hoshino.typing import CQEvent
 from hoshino.util import FreqLimiter
 import hoshino
 sv = Service('hiumsentences', enable_on_default=True, visible=True,help_='''
-[网抑云时间]来点网抑云语录
+[网抑云时间] 来点网抑云语录
 '''.strip())
 
 _time_limit = 5
@@ -23,8 +23,9 @@ def pic_gender_cqcode(dic_name):
     return img_cqcode
 
 def get_nt_words():
-    if os.path.exists('./hoshino/modules/hiumsentences/nt_words.json'):
-        with open('./hoshino/modules/hiumsentences/nt_words.json',"r",encoding='utf-8') as dump_f:
+    _path = os.path.join(os.path.dirname(__file__), 'nt_words.json')
+    if os.path.exists(_path):
+        with open(_path,"r",encoding='utf-8') as dump_f:
             try:
                 # 读取错误一般是人工改动了config并且导致json格式错误
                 words = json.load(dump_f)
